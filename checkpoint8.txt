@@ -1,0 +1,34 @@
+FOR i FROM 0 TO v1.length-1 STEP DO
+     write ("give v1")
+     read (v1[i])
+
+END_FOR
+
+FOR j FROM 0 TO v2-length-1 STEP 1 DO
+     write ("give v2")
+     read (v2[j]) 
+END_FOR
+
+a:=v1.length
+b:=v2.length
+
+IF (a=b) THEN 
+    FOR i FROM 0 TO v1.length-1 STEP 1 DO
+       FOR j FROM 0 TO v2.length-1 STEP 1 DO
+          PS:=v1[i]*v2[j]
+    END_FOR
+  END_FOR
+END_IF
+END
+
+ALGORITHM PP
+VAR
+        n: ARRAY_OF INTEGER[]
+BEGIN
+       IF (dot_product(n)=0) THEN
+           write("the vectors are orthogonal")
+       ELSE
+           write("the vectors are not orthogonal")
+       END_IF
+      END_IF
+END
